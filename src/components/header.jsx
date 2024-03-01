@@ -25,6 +25,9 @@ const Header = () => {
               <details>
                 <summary>Pages</summary>
                 <ul className="p-2 bg-blue-900">
+                  <li>
+                    <Link href="/learn">Learn</Link>
+                  </li>
                   <li className="bg-blue-900">
                     <Link href="/includes">Includes</Link>
                   </li>
@@ -33,9 +36,6 @@ const Header = () => {
                   </li>
                   <li className="bg-blue-900">
                     <Link href="/about">About</Link>
-                  </li>
-                  <li>
-                    <Link href="/learn">Learn</Link>
                   </li>
                 </ul>
               </details>
