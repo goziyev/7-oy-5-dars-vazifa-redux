@@ -3,9 +3,10 @@ import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/logoicons.png";
 import Basket from "../../public/basket.webp";
+import book from "../../public/book.png";
 const Header = () => {
   return (
-    <header className="w-full h-40 bg-blue-900">
+    <header className="w-full bg-blue-900">
       <div className="navbar text-white container items-center  justify-around mx-auto gap-9 p-4">
         <div className="navbar-start">
           <div className="dropdown">
@@ -54,8 +55,75 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <div className="flex justify-center">
-
+      <div className="flex text-white container items-center  justify-around mx-auto gap-9 p-4 ">
+        <div className="text-white">
+          <p className="text-xl">
+            <i>Welcome to Pages</i>
+          </p>
+          <p className="text-[70px] font-[800] w-5/6 mt-5">
+            Books are uniquely portable magic{" "}
+          </p>
+          <p className="mt-5 mb-10 w-3/6 text-gray-400">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form.
+          </p>
+          <div className="flex items-center gap-6">
+            <button className="btn btn-warning" style={{ borderRadius: "0px" }}>
+              Order Today
+            </button>
+            <a className=" underline d-block pb-2">Reed Free Demo</a>
+          </div>
+          <div className="flex mt-9 items-center gap-8">
+            <div>
+              <h5 className="flex items-center">
+                <span
+                  className="d-block bg-warning mr-2"
+                  style={{
+                    display: "inline-block",
+                    width: "20px",
+                    height: "20px",
+                    borderRadius: "50%",
+                  }}
+                ></span>
+                Pages:
+              </h5>
+              <p className="text-gray-400 pl-6">565pages</p>
+            </div>
+            <div>
+              <h5 className="flex items-center">
+                <span
+                  className="d-block bg-warning mr-2"
+                  style={{
+                    display: "inline-block",
+                    width: "20px",
+                    height: "20px",
+                    borderRadius: "50%",
+                  }}
+                ></span>
+                Length:
+              </h5>
+              <p className="text-gray-400 pl-6">10 hours</p>
+            </div>
+            <div>
+              <h5 className="flex items-center">
+                <span
+                  className="d-block bg-warning mr-2"
+                  style={{
+                    display: "inline-block",
+                    width: "20px",
+                    height: "20px",
+                    borderRadius: "50%",
+                  }}
+                ></span>
+                Ratings:
+              </h5>
+              <p className="text-gray-400 pl-6">4.5/5(305 ratings)</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <Image src={book}></Image>
+        </div>
       </div>
     </header>
   );
