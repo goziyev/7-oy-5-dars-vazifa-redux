@@ -16,6 +16,9 @@ const Header = () => {
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
               <Link href="/books">Books</Link>
             </li>
             <li>
@@ -31,6 +34,9 @@ const Header = () => {
                   <li className="bg-blue-900">
                     <Link href="/about">About</Link>
                   </li>
+                  <li>
+                    <Link href="/learn">Learn</Link>
+                  </li>
                 </ul>
               </details>
             </li>
@@ -38,16 +44,13 @@ const Header = () => {
               <Link href="/trusted">Trusted</Link>
             </li>
             <li>
+              <Link href="/getbook">Get book</Link>
+            </li>
+            <li>
               <Link href="/articles">Articles</Link>
             </li>
             <li>
               <Link href="/free">Free</Link>
-            </li>
-            <li>
-              <Link href="/getbook">Get book</Link>
-            </li>
-            <li>
-              <Link href="/learn">Learn</Link>
             </li>
           </ul>
           <a className="flex items-center gap-1 px-2 py-1 bg-gray-200 rounded-full mr-2">
