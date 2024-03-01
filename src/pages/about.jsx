@@ -1,9 +1,8 @@
-import React from "react";
+import about from "../../public/About.png";
 import "../app/globals.css";
+import Image from "next/image";
 function About() {
-  return (
-    <div className="text-center bg-red-400 p-5 text-white fs-5">About</div>
-  );
+  return <Image src={about} alt="about" />;
 }
 
 export default About;
